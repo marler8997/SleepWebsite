@@ -1,7 +1,12 @@
 <?php 
+
 include('login.php');
 
+require_once('jsoncalls.php');
+
 if($uid !== FALSE) {
+  $pageTitle = "Checkin $firstName";
+	
   $extraJavascriptFiles = array('checkin.js');  
 
   // Get initial checkin times
@@ -26,7 +31,10 @@ if($uid !== FALSE) {
   ob_start();   
 
 
-    if($loginError !== FALSE) {
+    if($loginError === false ) {
+       $pageTitle = 'Login';
+    } else {
+       $pageTitle = 'Login Failed';
        echo '<h1 class="ErrorMessage" style="text-align:center;">'.$loginError.'</h1>';
     }
     include('register.html');
@@ -38,7 +46,6 @@ if($uid !== FALSE) {
 }
   
 if($loginError !== FALSE) {
-  $pageTitle = 'Login Failed';
 } else if($uid === FALSE) {
   $pageTitle = 'Login';
 } else {

@@ -46,9 +46,10 @@ function login() {
   if($result === FALSE) return EMAIL_OR_PASS_MSG;
 
   list($uid,$salt,$storedHash) = $result;
-  
-  $computedHash = passwd($password, $salt);
-  if($computedHash != $storedHash) return EMAIL_OR_PASS_MSG;
+
+    
+  $computedHash = pack('H*', passwd($password, $salt));
+  if(strcmp($computedHash, $storedHash) == 0) return EMAIL_OR_PASS_MSG;
   
   return $uid;  
 }

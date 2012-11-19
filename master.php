@@ -37,15 +37,15 @@
 if($uid !== FALSE) {
 
   echo '<div id="UserNameDiv">';
-  echo   '<span style="font-weight:bold;">'.$userName.'</span> ';
-  echo   '<span class="WhiteButton" style="background:#aaa;color:#000;" onclick="logout()">Logout</span>';
+  echo   '<span style="font-weight:bold;">'.$firstName.'</span> ';
+  echo   '<span class="SmallButton" onclick="logout()">Logout</span>';
   echo '</div>';
 
 } else {
 
   ?>
   <div id="UserNameDiv">
-    <form style="display:inline-block;" method="POST">
+    <form action="/" style="display:inline-block;" method="POST">
       <table>
         <tr><td>Email</td><td>Password</td><td></td></tr>
          <tr><td><input type="text" name="Email" /></td>
