@@ -1,0 +1,32 @@
+*{margin:0;padding:0;}
+body{text-align:center;}
+#BodyDiv {
+  position:relative;
+  margin:0 auto;
+  width:800px;
+  text-align:left;
+}
+#HeaderDiv {
+  position:relative;
+  /*background:#000;*/
+  height:85px;
+  border-bottom:1px solid #333;
+}
+
+#UserNameDiv {
+  font-size:14px;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:5px;
+}
+
+table {
+  border-collapse:collapse;
+}
+td {padding:10px 5px 0 5px;}
+#CheckinTable td{width:250px;}
+#CheckinTable td.Time {text-align:right;}
+
+.AlignRight{text-align:right;}
+.AlignLeft{text-align:left;}

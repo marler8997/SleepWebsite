@@ -1,0 +1,59 @@
+.WhiteButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#666666;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffffff;
+}.WhiteButton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff) );
+    background:-moz-linear-gradient( center top, #f6f6f6 5%, #ffffff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
+    background-color:#f6f6f6;
+}.WhiteButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+.SmallButton {
+    cursor:pointer;
+    -moz-box-shadow:inset 0px 1px 0px 0px #999;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #999;
+    box-shadow:inset 0px 1px 0px 0px #999;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #999), color-stop(1, #a6a6a6) );
+    background:-moz-linear-gradient( center top, #999 5%, #a6a6a6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999', endColorstr='#a6a6a6');
+    background-color:#999;
+    border:1px solid #444;
+    display:inline-block;
+    color:#222;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    height:22px;
+    padding:1px 4px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #999;
+}.SmallButton:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a6a6a6), color-stop(1, #999) );
+    background:-moz-linear-gradient( center top, #a6a6a6 5%, #999 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6a6a6', endColorstr='#999');
+    background-color:#a6a6a6;
+}.SmallButton:active {
+    position:relative;
+    top:1px;
+}

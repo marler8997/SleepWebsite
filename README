@@ -1,0 +1,20 @@
+================================================================================
+Database Information
+================================================================================
+Database Setup:
+1. Create Database
+CREATE DATABASE sleep;
+
+2. Create Global User
+CREATE USER sleep;
+
+3. Add permissions to capp user
+GRANT ALL ON sleep.* to sleep;
+GRANT FILE ON *.* to sleep;
+
+5. Create tables
+mysql -u sleep sleep < createTables.sql
+(or ./m < createTables.sql)
+
+NOTE: Each group has it's own set of tabes prefixed with 'group$(gid)...'
+
