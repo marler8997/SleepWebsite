@@ -53,7 +53,7 @@ if($uid !== FALSE) {
          <td><input class="SmallButton" type="submit" value="Login"/></td></tr>
       </table>
     </form>
-  a</div>
+  </div>
   <?php
 
 }
